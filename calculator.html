@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's calculate</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <h1 id="2"> You're here</h1>
+    <div class="calcm">
+        <details id="d1" ontoggle="">
+            <summary>Calculate BMI</summary>
+            
+                <input type="number" name="height1a" id="inches" placeholder="height in inches">
+                <input type="number" name="height1b" id="feets" placeholder="height in feets">
+                <input type="number" name="mass1" id="mass" placeholder="mass in kilograms">
+                <br>
+                <button onclick="func()">Result</button>
+                <p id="display"></p>
+           
+        </details>
+
+        <details id="d2" >
+            <summary>Calculate Calories</summary>
+            <p>BMR stands for Basal Metabolic Rate</p> 
+            <br>
+            <input type="number" name="bmr" id="bmr" placeholder="enter BMR">
+            <button onclick="calOries()">Result</button>
+            <p id="display2"></p>
+        </details>
+
+        <details id="d3">
+            <summary>Calculate Age</summary>
+            <input type="number" name="year1" id="y1" placeholder="Enter year of birth">
+            <input type="number" name="year2" id="y2" placeholder="Enter current year">
+            <br>
+            <button onclick="ageCalc()">Result</button>
+            <p id="display3"></p>
+        </details>
+
+        <details id="d4">
+            <summary>Calculate Ideal Weight</summary>
+            <input type="text" id="g" placeholder="Enter Gender(F/M)" >
+            <input type="number" id="inches2" placeholder="Height in inches">
+            <input type="number" id="feets2" placeholder="Height in feets">
+            <button  onclick="disiWeight()">Result</button>
+            <p id="display4"></p>
+        </details>
+
+        <details id="d5">
+            <summary>Calculate Healthy Weight</summary>
+            <p>BMI stands for Body Mass index and can be calculated above.</p>
+            <input type="number" name="rweight" id="hweight" placeholder="Enter BMI">
+            <button onclick="dishWeight()">Result</button>
+            <p id="display5"></p>
+        </details>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

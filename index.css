@@ -1,0 +1,65 @@
+*{
+    text-decoration: none;
+    font-family: "Poppins", Calibri;
+}
+
+body{
+    background-color: blue;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+}
+
+button{
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    width: 15%;
+    height: 10%;
+    background-color: purple;
+    outline: none;
+    color: whitesmoke;
+    margin-top: 2%;
+    box-shadow: 2px 2px 5px violet;
+}
+
+
+b{
+    color: pink;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 2%;
+    margin-top: 1%;
+    margin-right: 4%;
+    height: 4%;
+    background-color: grey;
+    font-size: large;
+    color: white;
+    outline: none;
+    box-shadow: 3px 3px 5px grey;
+    cursor: pointer;
+    
+}
+details > summary{
+    cursor: pointer;
+    outline: none;
+}
+
+
+::placeholder{
+    color: white;
+}
+
+@media(max-height:650px){
+    input{
+        margin-bottom: 4%;
+        padding: 5%;
+    }
+    button{
+        width: 20%;
+        height: 20%;
+    }
+}
