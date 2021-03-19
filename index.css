@@ -23,6 +23,11 @@ button{
     box-shadow: 2px 2px 5px violet;
 }
 
+label{
+    font-size: larger;
+    font-weight: 300;
+    padding: 5%;
+}
 
 b{
     color: pink;
@@ -70,5 +75,20 @@ details > summary{
     .welcm{
         width: 80%;
         padding: 4%;
+    }
+
+    /* make label responsive */
+    label{
+        padding: 2%;
+    }
+
+    /* make the inches and heights inputs mobile responsive */
+    #inches, #feets, #inches2, #feets2, #mass, #g{
+        width: 30%;
+        padding: 1%;
+    }
+
+    ::placeholder{
+        font-size: 55%;
     }
 }

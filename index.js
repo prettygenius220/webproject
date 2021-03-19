@@ -14,7 +14,7 @@ function exponentHeight(){
 // calculate the bmi with the formula mass/height^2
 function bmi() {
     var c = document.getElementById("mass").value;
-    return (c/exponentHeight());
+    return (c/exponentHeight()+"kg/m^2");
 }
 // display the bmi
 function func() {
@@ -25,7 +25,7 @@ function func() {
 function calOries() {
     var bmr = document.getElementById("bmr").value;
     var calories= bmr * 1.2;
-    document.getElementById("display2").innerHTML= calories;
+    document.getElementById("display2").innerHTML= calories+"J";
     
 }
 
@@ -33,7 +33,12 @@ function calOries() {
 function ageCalc(){
     var a = document.getElementById("y1").value;
     var b = document.getElementById("y2").value;
-    var c = b - a;
+    if (b>a){
+        var c = b - a;
+    
+    } else{
+        var c = "Please enter the correct year of birth"
+    }
     document.getElementById("display3").innerHTML=c;
 }
 
@@ -57,7 +62,7 @@ function iWeight(){
 }
 // display calculate ideal weight
 function disiWeight(){
-    document.getElementById("display4").innerHTML=iWeight();
+    document.getElementById("display4").innerHTML=iWeight()+"N";
 }
 
 // result for bmi entered
